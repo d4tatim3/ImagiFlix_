@@ -35,7 +35,7 @@ const Carousel = ({
   }) => (
     <button
       type="button"
-      className={`absolute w-16 h-80 z-10 bg-black bg-opacity-70 hover:bg-opacity-90 top-10 ${
+      className={`absolute w-16 h-full z-10 bg-black bg-opacity-50 hover:bg-opacity-90 top-10 ${
         direction ? 'left-0' : 'right-0'
       }`}
       onClick={onClick}
@@ -58,7 +58,7 @@ const Carousel = ({
   return (
     <section className="carousel">
       <h2 className="relative z-10 text-xl font-bold ml-8">{title}</h2>
-      <Slick className="relative my-4" {...options}>
+      <Slick className="relative mb-8" {...options}>
         {data.map((movie, index) => Poster(movie, index))}
       </Slick>
     </section>

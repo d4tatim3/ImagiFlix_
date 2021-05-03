@@ -10,7 +10,7 @@ import './Poster.css';
 
 const Poster = ({ cover, title, score }: Movie, index: number) => (
   <article
-    className="relative transition-all duration-200 ease-in-out transform hover:scale-110"
+    className="relative px-1 transition-all duration-200 ease-in-out transform hover:scale-110"
     key={index}
   >
     <img src={cover} alt={title} />
